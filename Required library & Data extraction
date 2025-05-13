@@ -1,3 +1,5 @@
 import pandas as pd
 
 df = pd.read_csv('Dry_Bean_Dataset.xlsx', index_col=0)
+y = df['Class']
+X = df.iloc[:,:-1]
